@@ -7,13 +7,13 @@ function createSinistro() {
     const bairro = document.getElementById('bairro').value;
     const estado = document.getElementById('estado').value;
     const pais = document.getElementById('pais').value;
-  
+
     // Verifica se os campos obrigatórios estão preenchidos
     if (!data || !tipo || !rua || !numero || !cidade || !bairro || !estado || !pais) {
         alert('Por favor, preencha todos os campos obrigatórios (*).');
         return false; // Impede o envio do formulário
     }
-  
+
     // Monta o objeto de sinistro a ser enviado para o backend
     const novoSinistro = {
         data: data,
@@ -27,7 +27,7 @@ function createSinistro() {
             pais: pais,
         },
     };
-  
+
     // Aqui usamos o Axios para fazer uma requisição POST para o backend.
     axios.post('http://localhost:3001/api/sinistros', novoSinistro)
         .then((response) => {
@@ -38,12 +38,11 @@ function createSinistro() {
             console.error('Erro ao criar sinistro:', error);
             alert('Erro ao criar sinistro. Por favor, tente novamente mais tarde.');
         });
-    
+
     return false; // Impede o envio do formulário por padrão (caso o Axios não retorne a tempo)
 }
 
 function cancelarFormulario() {
     window.location.href = '/index.html'; // Redireciona para a página inicial (index.html)
- }
+}
 
-  

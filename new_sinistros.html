@@ -36,74 +36,74 @@
         </header>
         <h2 class="asterisco">Todos os campos que contém asterísco (*) são obrigatórios</h2>
         <form onsubmit="return createSinistro()" method="post"">
-            <div class="form-row">
-                <label for="data">
-                    <h3 class="data-label">Data *</h3>
-                </label>
-                <input type="date" id="data" name="data" placeholder="00/00/0000" required>
-            </div>
+            <div class=" form-row">
+            <label for="data">
+                <h3 class="data-label">Data *</h3>
+            </label>
+            <input type="date" id="data" name="data" placeholder="00/00/0000" required>
+    </div>
 
-            <div class="form-row">
-                <label for="tipo">
-                    <h3 class="tipo-label">Tipo *</h3>
-                </label>
-                <select id="tipo" name="tipo" required>
-                    <option value="" disabled selected>Selecione uma opção</option>
-                    <option value="Opção 1">Roubo ou Furto</option>
-                    <option value="Opção 2">Colisão</option>
-                    <option value="Opção 3">Causas naturais</option>
-                </select>
-            </div>
+    <div class="form-row">
+        <label for="tipo">
+            <h3 class="tipo-label">Tipo *</h3>
+        </label>
+        <select id="tipo" name="tipo" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Opção 1">Roubo ou Furto</option>
+            <option value="Opção 2">Colisão</option>
+            <option value="Opção 3">Causas naturais</option>
+        </select>
+    </div>
 
-            <h3 class="local-label">Local *</h3>
+    <h3 class="local-label">Local *</h3>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="rua">Rua *</label>
-                    <input type="text" id="rua" name="rua" placeholder="Insira o endereço" required>
-                </div>
-                <div class="input-group">
-                    <label for="numero">Número *</label>
-                    <input type="text" id="numero" name="numero" placeholder="Insira o número" required>
-                </div>
-            </div>
+    <div class="form-row">
+        <div class="input-group">
+            <label for="rua">Rua *</label>
+            <input type="text" id="rua" name="rua" placeholder="Insira o endereço" required>
+        </div>
+        <div class="input-group">
+            <label for="numero">Número *</label>
+            <input type="text" id="numero" name="numero" placeholder="Insira o número" required>
+        </div>
+    </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="cidade">Cidade *</label>
-                    <input type="text" id="cidade" name="cidade" placeholder="Insira a cidade" required>
-                </div>
-                <div class="input-group">
-                    <label for="bairro">Bairro *</label>
-                    <input type="text" id="bairro" name="bairro" placeholder="Insira o bairro" required>
-                </div>
-            </div>
+    <div class="form-row">
+        <div class="input-group">
+            <label for="cidade">Cidade *</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Insira a cidade" required>
+        </div>
+        <div class="input-group">
+            <label for="bairro">Bairro *</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Insira o bairro" required>
+        </div>
+    </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="estado">Estado *</label>
-                    <input type="text" id="estado" name="estado" placeholder="Insira o estado" required>
-                </div>
-                <div class="input-group">
-                    <label for="pais">País *</label>
-                    <input type="text" id="pais" name="pais" placeholder="Insira o país" required>
-                </div>
-            </div>
+    <div class="form-row">
+        <div class="input-group">
+            <label for="estado">Estado *</label>
+            <input type="text" id="estado" name="estado" placeholder="Insira o estado" required>
+        </div>
+        <div class="input-group">
+            <label for="pais">País *</label>
+            <input type="text" id="pais" name="pais" placeholder="Insira o país" required>
+        </div>
+    </div>
 
-            <div class="button-group">
-                <button type="button" class="cancelar" onclick="cancelarFormulario()">Cancelar</button>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
+    <div class="button-group">
+        <button type="button" class="cancelar" onclick="cancelarFormulario()">Cancelar</button>
+        <button type="submit">Enviar</button>
+    </div>
+    </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/Frontend/new_sinistros.js"></script>
     <script>
         function cancelarFormulario() {
-          window.location.href = '/index.html';
+            window.location.href = '/index.html';
         }
-        </script>
-    
+    </script>
+
 
 </body>
 
