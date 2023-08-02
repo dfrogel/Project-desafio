@@ -54,8 +54,8 @@ O servidor será iniciado e estará executando em **http://localhost:3001**
 
 5. Em outro terminal, inicie o servidor frontend:
 ```
-cd Frontend
-npm start
+cd Project-desafio
+live-server
 ```
 O servidor frontend será iniciado e estará acessível em **http://localhost:8080**
 
