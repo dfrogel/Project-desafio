@@ -50,7 +50,7 @@ cd Backend
 npm start
 ```
 
-O servidor será iniciado e estará escutando em **http://localhost:3001**
+O servidor será iniciado e estará executando em **http://localhost:3001**
 
 5. Em outro terminal, inicie o servidor frontend:
 ```
