@@ -32,7 +32,7 @@ git clone https://github.com/dfrogel/Project-desafio.git
 
 2. Acesse a pasta do projeto:
 ```
-cd sinistros-app
+cd Project-desafio
 ```
 
 3. Instale as dependências tanto no backend quanto no frontend:
