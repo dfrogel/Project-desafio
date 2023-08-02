@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Sinistro</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat:wght@200;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Frontend/global.css">
+    <link rel="stylesheet" href="/Frontend/style_edit.css">
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <img src="/images/logo.svg" alt="logo" class="logo">
+            <div class="circle circle-200"></div>
+            <div class="circle circle-24"></div>
+            <div class="circle circle-24p2"></div>
+            <div class="circle circle-8"></div>
+            <div class="circle circle-100"></div>
+            <div class="circle circle-144x180"></div>
+        </header>
+        <h2 class="asterisco">Todos os campos que contém asterísco (*) são obrigatórios</h2>
+
+        <div class="form-row">
+            <label for="data">
+                <h3 class="data-label">Data *</h3>
+            </label>
+            <input type="date" id="data" name="data" placeholder="00/00/0000" required>
+        </div>
+
+        <div class="form-row">
+            <label for="tipo">
+                <h3 class="tipo-label">Tipo *</h3>
+            </label>
+            <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Opção 1">Roubo ou Furto</option>
+                <option value="Opção 2">Colisão</option>
+                <option value="Opção 3">Causas naturais</option>
+            </select>
+        </div>
+
+        <h3 class="local-label">Local *</h3>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label for="rua">Rua *</label>
+                <input type="text" id="rua" name="rua" placeholder="Insira o endereço" required>
+            </div>
+            <div class="input-group">
+                <label for="numero">Número *</label>
+                <input type="text" id="numero" name="numero" placeholder="Insira o número" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label for="cidade">Cidade *</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Insira a cidade" required>
+            </div>
+            <div class="input-group">
+                <label for="bairro">Bairro *</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Insira o bairro" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label for="estado">Estado *</label>
+                <input type="text" id="estado" name="estado" placeholder="Insira o estado" required>
+            </div>
+            <div class="input-group">
+                <label for="pais">País *</label>
+                <input type="text" id="pais" name="pais" placeholder="Insira o país" required>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <a href="my_sinistros.html" class="voltar">
+                <button class="cancelar">Cancelar</button>
+            </a>
+            <button onclick="updateSinistro()">Salvar Alterações</button>
+        </div>
+    </div>
+
+    <script src="/Frontend/my_sinistros.js"></script>
+    <script src="/Frontend/edit_sinistros.js"></script>
+</body>
+
+</html>

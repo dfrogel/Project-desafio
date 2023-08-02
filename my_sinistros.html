@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Sinistros</title>
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat:wght@200;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/Frontend/global.css">
+    <link rel="stylesheet" href="/Frontend/style_my.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <header class="header">
+            <img src="/images/logo.svg" alt="logo" class="logo">
+            <div class="circle circle-200"></div>
+            <div class="circle circle-24"></div>
+            <div class="circle circle-24p2"></div>
+            <div class="circle circle-8"></div>
+            <div class="circle circle-100"></div>
+            <div class="circle circle-144x180"></div>
+        </header>
+        <h1>Meus sinistros</h1>
+        <div id="sinistrosListElement">
+            <!-- Aqui será exibida a lista de sinistros -->
+            <button data-sinistro-id="${sinistro._id}" class="editar">Editar</button>
+            <button data-sinistro-id="${sinistro._id}" class="excluir">Excluir</button>
+
+            <a href="new_sinistros.html" class="new_sinistros">
+                <button class="new_sinistro">
+                    <h2>Criar um sinistro</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#fff" d="M14.59 8L10 12.59 5.41 8 4 9.41 10 15.41 16 9.41z" />
+                    </svg>
+                </button>
+            </a>
+        </div>
+        <a href="index.html" class="voltar">
+            <button class="voltar"> Voltar ao início</button>
+        </a>
+        <script src="/Frontend/my_sinistros.js"></script>
+        <script src="/Frontend/edit_sinistros.js"></script>
+    </div>
+</body>
+
+</html>

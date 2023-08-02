@@ -1,0 +1,164 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main > h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    top: 140px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-row h3 {
+    margin-bottom: 5px;
+}
+
+.form-row .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex: 1;
+    position:relative;
+    top: -20px;
+    right:15px;
+}
+
+.form-row .input-group label {
+    margin-bottom: 5px;
+    position:relative;
+    top: 130px;
+    right:-75px;
+}
+
+.form-row .input-group input,
+.form-row .input-group select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 185px;
+    position:relative;
+    top:130px;
+    right:-75px;
+}
+
+
+.data-label {
+    position: relative;
+    top: 80px;
+    right:-60px;
+}
+
+#data {
+    position: relative;
+    top: 120px;
+    width:500px;
+    height:30px;
+    border:1px solid #ccc;
+    color: #848282;
+}
+
+.tipo-label {
+    position: relative;
+    top: 95px;
+    right:-58px;
+}
+
+#tipo {
+    position: relative;
+    top: 135px;
+    width:504px;
+    height:30px;
+    border:1px solid #ccc;
+    color: #848282;
+    
+}
+
+.local-label {
+    position: relative;
+    top: 120px;
+    right:-60px;
+}
+
+.form-row .input-group:nth-child(odd) {
+    margin-right: 50px;
+}
+
+.button-group {
+    margin-top: 100px;
+    display: flex;
+    position:relative;
+    left:155px;
+    top:30px
+}
+
+.cancelar {
+    background-color: #9966ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+    position:relative;
+    left:220px;
+}
+
+.cancelar:hover {
+    background-color: #CDB4FE;
+}
+
+button[type="submit"] {
+    position:relative;
+    left:210px;
+    color:#fff;
+    background-color:#9966ff;
+    border:none;
+    border-radius:5px;
+    width:90px;
+    height:25px;
+    cursor:pointer;
+}
+
+button[type="submit"]:hover {
+    background-color:#CDB4FE;
+}
+
+/* Estilos para telas menores que 768px (dispositivos móveis) */
+@media (max-width: 768px) {
+    .form-row .input-group input,
+    .form-row .input-group select {
+      width: 100%; 
+      max-width: 215px; 
+    }
+  
+    .button-group {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .cancelar {
+      margin-right: 0; 
+      margin-bottom: 10px; 
+    }
+  
+    button[type="submit"] {
+      margin-left: 0; 
+    }
+  }
+  

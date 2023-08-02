@@ -1,0 +1,72 @@
+* {
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header .logo {
+  width: 180px;
+  height: 120px;
+  position:absolute;
+  top: 20px;
+  left: 45px;
+}
+
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    background-color: #9966ff;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+  }
+  
+  .circle-24 {
+    width: 24px;
+    height: 24px;
+    background-color: #e8f0f6;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    right: 95px;
+  }
+
+  .circle-24p2 {
+    width: 24px;
+    height: 24px;
+    background-color: #e8f0f6;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+  }
+  
+  .circle-8 {
+    width: 8px;
+    height: 8px;
+    background-color: #e8f0f6;
+    border-radius: 50%;
+    position:absolute;
+    top: 25px;
+    left: 20px;
+  }
+  
+  .circle-100 {
+    width: 100px;
+    height: 100px;
+    background-color: #0f7ac0;
+    border-radius: 50%;
+    position:absolute;
+    top:-60px;
+    left: 110px;
+  }
+  
+  .circle-144x180 {
+    width: 144px;
+    height: 180px;
+    background-color: #33cccc;
+    border-radius: 50%;
+    position:absolute;
+    top:10px;
+    left:-125px;
+  }
