@@ -47,7 +47,7 @@ npm install
 4. Inicie o servidor backend:
 ```
 cd Backend
-npm start
+node server.js
 ```
 
 O servidor será iniciado e estará executando em **http://localhost:3001**
